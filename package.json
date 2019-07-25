@@ -1,0 +1,8 @@
+{
+  "name": "twofacts",
+  "version": "1.0.0",
+  "description": "Two-factor authentication for Node.js using one-time password (TOTP, HOTP). Supports Google Authenticator.",
+  "main": "index.js",
+  "author": "rajat.srivastava.20893@gmail.com",
+  "license": "MIT"
+}
