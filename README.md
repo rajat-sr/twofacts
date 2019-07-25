@@ -4,6 +4,17 @@ Two-factor authentication for Node.js using one-time password (TOTP, HOTP). Supp
 TwoFacts implements the HMAC-Based One-time Password (HOTP) algorithm specified in [RFC 4226](https://tools.ietf.org/html/rfc4226) and the Time-based One-time Password (TOTP) algorithm specified in [RFC 6238](https://tools.ietf.org/html/rfc6238).
 
 
+## Example Usage
+```js
+const twofacts = require('twofacts'); // When this package is published to npm
+const userInput = '123456';
+
+// Obtain this from some secure place where secret is stored. The security of the whole process is based on this secret.
+const secret = 'LM7SGZFB4PBVJXXTFE2YDI22QUAHI3NK';
+
+console.log(verifyUsingGoogleAuthenticator(userInput, secret)); // Returns true if user entered the correct OTP
+```
+
 
 ## APIs
 ### verifyUsingGoogleAuthenticator
